@@ -62,18 +62,18 @@ const textureLoader = new THREE.TextureLoader(loadingManager)
 loadingManager.onError = (err) => console.error('error: ', err)
 
 const wallTextures = {
-  arm: textureLoader.load('/textures/wall/arm.webp'), // ao-rough-metal
+  arm: textureLoader.load('./textures/wall/arm.webp'), // ao-rough-metal
 
-  color: textureLoader.load('/textures/wall/diff.webp'),
-  normal: textureLoader.load('/textures/wall/nor_gl.webp'),
+  color: textureLoader.load('./textures/wall/diff.webp'),
+  normal: textureLoader.load('./textures/wall/nor_gl.webp'),
 }
 
 wallTextures.color.colorSpace = THREE.SRGBColorSpace
 
 const roofTextures = {
-  color: textureLoader.load('/textures/roof/diff.webp'),
-  arm: textureLoader.load('/textures/roof/arm.webp'), // ao-rough-metal
-  normal: textureLoader.load('/textures/roof/nor_gl.webp'),
+  color: textureLoader.load('./textures/roof/diff.webp'),
+  arm: textureLoader.load('./textures/roof/arm.webp'), // ao-rough-metal
+  normal: textureLoader.load('./textures/roof/nor_gl.webp'),
 }
 
 roofTextures.arm.repeat.set(3, 1)
@@ -87,26 +87,26 @@ roofTextures.normal.repeat.set(3, 1)
 roofTextures.normal.wrapS = THREE.RepeatWrapping
 
 const doorTextures = {
-  alpha: textureLoader.load('/textures/door/alpha.webp'),
-  color: textureLoader.load('/textures/door/diff.webp'),
-  displace: textureLoader.load('/textures/door/disp.webp'),
+  alpha: textureLoader.load('./textures/door/alpha.webp'),
+  color: textureLoader.load('./textures/door/diff.webp'),
+  displace: textureLoader.load('./textures/door/disp.webp'),
 
-  ao: textureLoader.load('/textures/door/ao.webp'),
-  roughness: textureLoader.load('/textures/door/roughness.webp'),
-  metalness: textureLoader.load('/textures/door/metalness.webp'),
+  ao: textureLoader.load('./textures/door/ao.webp'),
+  roughness: textureLoader.load('./textures/door/roughness.webp'),
+  metalness: textureLoader.load('./textures/door/metalness.webp'),
 
-  normal: textureLoader.load('/textures/door/normal.webp'),
+  normal: textureLoader.load('./textures/door/normal.webp'),
 }
 
 doorTextures.color.colorSpace = THREE.SRGBColorSpace
 
 const floorTextures = {
-  alpha: textureLoader.load('/textures/floor/alpha.webp'),
+  alpha: textureLoader.load('./textures/floor/alpha.webp'),
 
-  arm: textureLoader.load('/textures/floor/arm.webp'), // ao-rough-metal
-  color: textureLoader.load('/textures/floor/diff.webp'),
-  displace: textureLoader.load('/textures/floor/disp.webp'),
-  normal: textureLoader.load('/textures/floor/nor_gl.webp'),
+  arm: textureLoader.load('./textures/floor/arm.webp'), // ao-rough-metal
+  color: textureLoader.load('./textures/floor/diff.webp'),
+  displace: textureLoader.load('./textures/floor/disp.webp'),
+  normal: textureLoader.load('./textures/floor/nor_gl.webp'),
 }
 
 floorTextures.arm.repeat.set(8, 8)
@@ -127,9 +127,9 @@ floorTextures.normal.wrapS = THREE.RepeatWrapping
 floorTextures.normal.wrapT = THREE.RepeatWrapping
 
 const grassTextures = {
-  arm: textureLoader.load('/textures/grass/arm.webp'),
-  color: textureLoader.load('/textures/grass/diff.webp'),
-  normal: textureLoader.load('/textures/grass/nor_gl.webp'),
+  arm: textureLoader.load('./textures/grass/arm.webp'),
+  color: textureLoader.load('./textures/grass/diff.webp'),
+  normal: textureLoader.load('./textures/grass/nor_gl.webp'),
 }
 
 grassTextures.arm.repeat.set(2, 1)
@@ -143,9 +143,9 @@ grassTextures.normal.repeat.set(2, 1)
 grassTextures.normal.wrapS = THREE.RepeatWrapping
 
 const graveTextures = {
-  arm: textureLoader.load('/textures/grave/arm.webp'),
-  color: textureLoader.load('/textures/grave/diff.webp'),
-  normal: textureLoader.load('/textures/grave/nor_gl.webp'),
+  arm: textureLoader.load('./textures/grave/arm.webp'),
+  color: textureLoader.load('./textures/grave/diff.webp'),
+  normal: textureLoader.load('./textures/grave/nor_gl.webp'),
 }
 
 graveTextures.color.colorSpace = THREE.SRGBColorSpace
